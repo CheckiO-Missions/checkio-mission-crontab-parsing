@@ -1,20 +1,37 @@
 <!-- Describe task in general -->
-<!-- <img src="{{MEDIA_CONVERT}}title.png" class="title_img" /> -->
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+
 <p style="text-align: justify;">
-    Sum two passed ints
+    Linux <a target="_blank" href="https://www.geeksforgeeks.org/crontab-in-linux-with-examples/">Crontab command</a> is a powerful utility that is used for scheduling and automating tasks in Unix-like operating systems.
 </p>
 
-<p style="text-align: center;">
-    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+<p style="text-align: justify;">
+    In this mission your task is to parse a crontab timing expression (crontab format <code>MIN HOUR DOM MON DOW</code>), calculate and return the next execution time based on a provided current time (ISO format <code>YYYY-MM-DDTHH:MM</code>).
 </p>
+
+<p style="text-align: justify;">
+    Your script must support all standard crontab expressions:
+    <ul>
+        <li>Single numbers: 5, 10, 15;</li>
+        <li>Ranges: 1-5;</li>
+        <li>Steps: */2, 1-10/2;</li>
+        <li>Lists: 1,3,5;</li>
+        <li>Special character: *;</li>
+        <li>Special keywords: @yearly (@annually), @monthly, @weekly, @daily (@midnight), @hourly.</li>
+    </ul>
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input:</strong> Two arguments. Both are ints.
+    <strong>Input:</strong> Two strings (<span translate="no">str{% if is_js %}ing{% endif %}</span>).
 </p>
 
 <p>
-    <strong>Output:</strong> Int. 
+    <strong>Output:</strong> String (<span translate="no">str{% if is_js %}ing{% endif %}</span>). 
 </p>
 
 
