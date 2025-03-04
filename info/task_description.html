@@ -6,7 +6,7 @@
 </p>
 
 <p style="text-align: justify;">
-    In this mission your task is to parse a crontab timing expression (crontab format <code>MIN HOUR DOM MON DOW</code>), calculate and return the next execution time based on a provided current time (ISO format <code>YYYY-MM-DDTHH:MM</code>).
+    In this mission your task is to parse a crontab timing expression (crontab format <code>MIN HOUR DOM MON DOW</code>), return a sorted ascending list of next 3 execution datetimes based on a provided current datetime (ISO format <code>YYYY-MM-DDTHH:MM</code>).
 </p>
 
 <p style="text-align: justify;">
@@ -31,7 +31,7 @@
 </p>
 
 <p>
-    <strong>Output:</strong> String (<span translate="no">str{% if is_js %}ing{% endif %}</span>). 
+    <strong>Output:</strong> <span translate="repeat">{% if is_js %}Array{% else %}List{% endif %}</span> of three strings (<span translate="no">str{% if is_js %}ing{% endif %}</span>). 
 </p>
 
 
