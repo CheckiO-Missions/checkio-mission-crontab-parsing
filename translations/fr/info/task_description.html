@@ -1,0 +1,59 @@
+<!-- Describe task in general -->
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+
+<p style="text-align: justify;">
+    Linux <a target="_blank" href="https://www.geeksforgeeks.org/crontab-in-linux-with-examples/">Crontab command</a> est un puissant utilitaire utilisé pour planifier et automatiser les tâches dans les systèmes d'exploitation de type Unix.
+</p>
+
+<p style="text-align: justify;">
+    Dans cette mission, votre tâche consiste à analyser une expression de synchronisation crontab (format crontab <code>MIN HOUR DOM MON DOW</code>) et à renvoyer une liste ascendante triée des 3 prochaines dates d'exécution en fonction d'une date courante fournie (format ISO <code>YYYY-MM-DDTHH:MM</code>).
+</p>
+
+<p style="text-align: justify;">
+    Votre script doit supporter toutes les expressions crontab standard:
+    <ul>
+        <li>Chiffres simples: 5, 10, 15;</li>
+        <li>Plages: 1-5;</li>
+        <li>Pas: */2, 1-10/2;</li>
+        <li>Listes: 1,3,5;</li>
+        <li>Caractère spécial: *;</li>
+        <li>Mots clés spéciaux: @yearly (@annually), @monthly, @weekly, @daily (@midnight), @hourly.</li>
+    </ul>
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Deux chaînes de caractères (<span>str{% if is_js %}ing{% endif %}</span>).
+</p>
+
+<p>
+   <strong>Sortie:</strong> {% if is_js %}Tableau{% else %}Liste{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> de trois chaînes de caractères (<span>str{% if is_js %}ing{% endif %}</span>). 
+</p>
+
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
